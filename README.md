@@ -6,17 +6,15 @@ O conteúdo está organizado principalmente em notebooks Jupyter, acompanhados p
 
 ## Estrutura do repositório
 
-- [`preprocessing/`](preprocessing/) — notebooks de análise e preparação de dados:
-  - [`analise-dataset-esco.ipynb`](preprocessing/analise-dataset-esco.ipynb) explora o vocabulário oficial da ESCO, com atenção às competências (*skills*), ocupações e seus relacionamentos.
-  - [`preprocessamento-base-oportunidades.ipynb`](preprocessing/preprocessamento-base-oportunidades.ipynb) investiga e transforma dados de vagas do conjunto JobHunAI, incluindo a preparação de registros para associação com a ESCO.
-  - [`esco-dataset/`](preprocessing/esco-dataset/) contém arquivos CSV da ESCO em português, como ocupações, competências, hierarquias e relações entre elas.
-- [`metrics/`](metrics/) — notebooks de avaliação. [`avaliacao-bootstrap.ipynb`](metrics/avaliacao-bootstrap.ipynb) aplica bootstrap às avaliações e métricas dos motores BM25 e Jaccard para estimar intervalos de confiança e comparar resultados.
-- [`future-work/`](future-work/) — experimentos de geração de dados sintéticos e treinamento de GNNs:
-  - [`geracao-dados-sinteticos.ipynb`](future-work/geracao-dados-sinteticos.ipynb) explora Copula Gaussiana, redes Bayesianas, CTGAN e TVAE e compara a qualidade dos dados gerados por métricas.
-  - [`treinar-gnn.ipynb`](future-work/treinar-gnn.ipynb) integra dados de um grafo no Neo4j com PyTorch Geometric e experimenta GNNs relacionais RGCN e RGAT para gerar representações e previsões.
+- [`pre-processamento/`](pre-processamento/) — notebooks de análise e preparação de dados:
+  - [`analise-dataset-esco.ipynb`](pre-processamento/analise-dataset-esco.ipynb) explora o vocabulário oficial da ESCO, com atenção às competências (*skills*), ocupações e seus relacionamentos.
+  - [`preprocessamento-base-oportunidades.ipynb`](pre-processamento/preprocessamento-base-oportunidades.ipynb) investiga e transforma dados de vagas do conjunto JobHunAI, incluindo a preparação de registros para associação com a ESCO.
+  - [`esco-dataset/`](pre-processamento/esco-dataset/) contém arquivos CSV da ESCO em português, como ocupações, competências, hierarquias e relações entre elas.
+- [`metricas/`](metricas/) — notebooks de avaliação. [`avaliacao-bootstrap.ipynb`](metricas/avaliacao-bootstrap.ipynb) aplica bootstrap às avaliações e métricas dos motores BM25 e Jaccard para estimar intervalos de confiança e comparar resultados.
+- [`trabalhos-futuros/`](trabalhos-futuros/) — experimentos de geração de dados sintéticos e treinamento de GNNs:
+  - [`geracao-dados-sinteticos.ipynb`](trabalhos-futuros/geracao-dados-sinteticos.ipynb) explora Copula Gaussiana, redes Bayesianas, CTGAN e TVAE e compara a qualidade dos dados gerados por métricas.
+  - [`treinar-gnn.ipynb`](trabalhos-futuros/treinar-gnn.ipynb) integra dados de um grafo no Neo4j com PyTorch Geometric e experimenta GNNs relacionais RGCN e RGAT para gerar representações e previsões.
   - Inclui também arquivos CSV e JSON com dados e métricas associados aos experimentos.
-- [`knowledge/`](knowledge/) — textos de referência sobre geração de dados tabulares sintéticos e GNNs, além de um diagrama de explicabilidade.
-- [`LICENSE`](LICENSE) — licença do repositório.
 
 ## Dados e dependências externas
 
